@@ -10,6 +10,8 @@ I included an error boundary (in `Main.tsx`) to catch any errors that might happ
 
 For code-style, I used Prettify with a minimal setup and included a script to run the config on all files.
 
+The live app can be found here (on Netlify): https://main--scintillating-alpaca-ffb91c.netlify.app/
+
 <br />
 
 ## Styles
