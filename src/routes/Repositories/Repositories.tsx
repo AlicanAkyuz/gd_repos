@@ -1,10 +1,10 @@
 import { FC } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Avatar, Divider, List, Skeleton } from 'antd'
-import useFetchData from '../../hooks/useFetchData'
-import { ErrorView, NoDataView } from '../../views'
-import { apiGoDaddyRepos } from '../../api/config'
-import { ReposApiResponse } from '../../api/types'
+import { Avatar, List, Skeleton } from 'antd'
+import useFetchData from 'hooks/useFetchData'
+import { ErrorView, NoDataView } from 'views'
+import { apiGoDaddyRepos } from 'api/config'
+import { ReposApiResponse } from 'api/types'
 
 export const Repositories: FC = () => {
   const { data, error } = useFetchData<ReposApiResponse>(apiGoDaddyRepos)
@@ -19,18 +19,15 @@ export const Repositories: FC = () => {
       itemLayout="horizontal"
       dataSource={data}
       renderItem={(repo) => (
-        <>
-          <List.Item actions={[<a href={repo.name}>Repo Details</a>]}>
-            <Skeleton avatar title={false} loading={!repo} active>
-              <List.Item.Meta
-                avatar={<Avatar src={repo.owner.avatar_url} />}
-                title={<a href={repo.name}>{repo.name}</a>}
-                description={repo.description}
-              />
-            </Skeleton>
-          </List.Item>
-          <Divider style={{ margin: 10 }} />
-        </>
+        <List.Item actions={[<a href={repo.name}>Repo Details</a>]}>
+          <Skeleton avatar title={false} loading={!repo} active>
+            <List.Item.Meta
+              avatar={<Avatar src={repo.owner.avatar_url} />}
+              title={<a href={repo.name}>{repo.name}</a>}
+              description={repo.description}
+            />
+          </Skeleton>
+        </List.Item>
       )}
     />
   )

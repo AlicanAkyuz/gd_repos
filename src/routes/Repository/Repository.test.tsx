@@ -1,8 +1,8 @@
-import { render, screen } from '../../testSetup'
+import { render, screen } from 'testSetup'
 import { Repository } from './Repository'
-import useFetchData from '../../hooks/useFetchData'
+import useFetchData from 'hooks/useFetchData'
 import { useParams } from 'react-router-dom'
-import { apiGoDaddySingleRepo } from '../../api/config'
+import { apiGoDaddySingleRepo } from 'api/config'
 
 jest.mock('react-router-dom', () => ({
   useParams: jest.fn(() => {

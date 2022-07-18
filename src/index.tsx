@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import 'antd/dist/antd.css'
-import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import reportWebVitals from 'reportWebVitals'
 
-import { LayoutProvider } from './LayoutProvider'
-import { Main } from './Main'
-import { Repository } from './routes'
-import { NoDataView } from './views'
+import { LayoutProvider } from 'LayoutProvider'
+import { Main } from 'Main'
+import { Repository } from 'routes'
+import { NoDataView } from 'views'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 

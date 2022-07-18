@@ -1,4 +1,4 @@
-import { render, screen } from '../../testSetup'
+import { render, screen } from 'testSetup'
 import { NoDataView } from './NoDataView'
 
 const mockCallback = jest.fn()

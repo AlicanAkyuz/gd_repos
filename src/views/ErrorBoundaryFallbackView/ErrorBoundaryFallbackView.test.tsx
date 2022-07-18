@@ -1,4 +1,4 @@
-import { render, screen } from '../../testSetup'
+import { render, screen } from 'testSetup'
 import { ErrorBoundaryFallbackView } from './ErrorBoundaryFallbackView'
 
 const mockresetErrorBoundary = jest.fn()

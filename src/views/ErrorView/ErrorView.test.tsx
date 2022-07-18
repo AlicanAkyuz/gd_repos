@@ -1,4 +1,4 @@
-import { render, screen } from '../../testSetup'
+import { render, screen } from 'testSetup'
 import { ErrorView } from './ErrorView'
 
 describe('ErrorView', () => {

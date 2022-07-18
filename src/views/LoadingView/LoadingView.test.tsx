@@ -1,4 +1,4 @@
-import { render, screen } from '../../testSetup'
+import { render, screen } from 'testSetup'
 import { LoadingView } from './LoadingView'
 
 describe('LoadingView', () => {

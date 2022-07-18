@@ -1,10 +1,10 @@
 import { FC } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { Descriptions, Tag } from 'antd'
-import useFetchData from '../../hooks/useFetchData'
-import { ErrorView, LoadingView, NoDataView } from '../../views'
-import { apiGoDaddySingleRepo } from '../../api/config'
-import { Repo, RepoLanguages } from '../../api/types'
+import useFetchData from 'hooks/useFetchData'
+import { ErrorView, LoadingView, NoDataView } from 'views'
+import { apiGoDaddySingleRepo } from 'api/config'
+import { Repo, RepoLanguages } from 'api/types'
 
 export const Repository: FC = () => {
   const { repositoryName } = useParams()

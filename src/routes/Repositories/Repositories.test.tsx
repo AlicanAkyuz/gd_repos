@@ -1,6 +1,6 @@
-import { render, screen } from '../../testSetup'
+import { render, screen } from 'testSetup'
 import { Repositories } from './Repositories'
-import useFetchData from '../../hooks/useFetchData'
+import useFetchData from 'hooks/useFetchData'
 
 jest.mock('react-router-dom', () => ({
   useNavigate: jest.fn(() => ({
